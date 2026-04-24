@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Botão de alternar tema -->
+  <button id="toggleTheme" class="theme-btn">🌙</button>
+
+  <div class="container">
+    <h2 id="formTitle">Login</h2>
+
+    <form id="loginForm">
+      <input type="email" id="email" placeholder="Email" required>
+      
+      <!-- Campo de senha com botão de mostrar -->
+      <div class="password-box">
+        <input type="password" id="password" placeholder="Senha" required>
+        <span id="togglePassword">👁️</span>
+      </div>
+
+      <button type="submit">Entrar</button>
+    </form>
+
+    <!-- Botão para alternar login/cadastro -->
+    <p>
+      <span id="toggleForm">Criar conta</span>
+    </p>
+
+    <p id="message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+}
+
+/* Tema claro (default) */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #3c09c9, #d4940a);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  transition: 0.3s;
+}
+
+/* Tema escuro */
+body.dark {
+  background: linear-gradient(135deg, #000000, #3b3a37);
+  color: white;
+}
+
+/* Container principal */
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Dark mode no container */
+body.dark .container {
+  background: #1e1e1e;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Caixa de senha com ícone */
+.password-box {
+  position: relative;
+}
+
+.password-box span {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  cursor: pointer;
+}
+
+/* Botão */
+button {
+  width: 100%;
+  padding: 10px;
+  background: #6a11cb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2575fc;
+}
+
+/* Botão de tema moderno (canto superior direito) */
+.theme-btn {
+  position: fixed; /* fixa na tela */
+  top: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%; /* deixa circular */
+  border: none;
+  background: #ffffff;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* Dark mode botão */
+body.dark .theme-btn {
+  background: #1e1e1e;
+  color: #fff;
+}
+
+/* Mensagem */
+#message {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Link de troca */
+#toggleForm {
+  color: #ff9800;
+  cursor: pointer;
+  font-size: 18px; /* AUMENTADO (antes era menor) */
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 10px;
+
+}
+  
+/* Responsividade */
+@media (max-width: 400px) {
+  .container {
+    padding: 20px;
+  }
+}

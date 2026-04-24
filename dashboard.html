@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+</head>
+<body>
+
+  <h1>Bem-vindo 👋</h1>
+  <button onclick="logout()">Sair</button>
+
+  <script>
+    // Verifica se está logado
+    if (localStorage.getItem("loggedIn") !== "true") {
+      window.location.href = "index.html";
+    }
+
+    function logout() {
+      localStorage.removeItem("loggedIn");
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>
