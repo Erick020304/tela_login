@@ -54,9 +54,11 @@ input {
 .password-box span {
   position: absolute;
   right: 10px;
-  top: 12px;
+  top: 50%;
+  transform: translateY(-50%);
   cursor: pointer;
 }
+
 
 /* Botão */
 button {

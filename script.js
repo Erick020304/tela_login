@@ -7,6 +7,7 @@ const formTitle = document.getElementById("formTitle");
 
 let isLogin = true; // controla login ou cadastro
 
+
 /* =========================
    Mostrar/Ocultar Senha
 ========================= */
