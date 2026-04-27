@@ -26,8 +26,3 @@ Construção de um projeto de uma **tela de login moderna** desenvolvida com **H
 - LocalStorage (Web API)
 
 ---
-
-## 📸 Preview
-
-```md
-![preview](./![alt text](image.png))
